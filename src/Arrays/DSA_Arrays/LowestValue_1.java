@@ -8,14 +8,14 @@ package Arrays.DSA_Arrays;
 public class LowestValue_1 {
     public static void main(String[] args) {
         int[] my_array = {10, 14, 4, 7, 9,1, 34};
-        int minVal = my_array[0];
+        int minVal = my_array[0];  //  Step 1: Assume the first element is the minimum
 
-        for (int i : my_array) {
-            if (i < minVal) {
-                minVal = i;
+        for (int i : my_array) {   // Step 2: Loop through each element
+            if (i < minVal) {      // Step 3: Compare current num with min
+                minVal = i;        // Step 4: If smaller, update min
             }
         }
-        System.out.println("Lowest Value: " + minVal);
+        System.out.println("Lowest Value: " + minVal);    // Step 5: Output the result
     }
 }
 
