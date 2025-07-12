@@ -45,5 +45,5 @@ For each element in the array
 Note: The two step-by-step descriptions of the algorithm we have written above can be called 'pseudocode'.
       Pseudocode is a description of what a program does, using language that is something between human
       language and a programming language.
-      
+
  */
