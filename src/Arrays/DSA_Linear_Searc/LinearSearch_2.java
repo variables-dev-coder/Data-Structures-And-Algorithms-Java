@@ -2,7 +2,7 @@ package Arrays.DSA_Linear_Searc;
 
 
 // Find the index of the element in the array. If not found, return -1.
-
+// 1. Find an Element in an Array
 
 public class LinearSearch_2 {
     public static int linearSearch(int[] arr, int target) {
