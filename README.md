@@ -81,7 +81,7 @@ This is a daily journey to build strong problem-solving skills and prepare for *
 - Subarray with Given Sum K
 
 #### 🧱 Stack & Queue
-- Stack using Array/LinkedList
+- Stack using Array/LinkedLists
 - Queue & Circular Queue
 - Monotonic Stack
 - Next Greater Element
