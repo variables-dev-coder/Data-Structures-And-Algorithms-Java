@@ -72,6 +72,6 @@ public class Dll_DeleteFromBeginning {
 
         dll.deleteFromBeginning();      // Delete 20
         dll.displayForward();           // List: 30 <-> 40 <-> null
-        
+
     }
 }
