@@ -1,5 +1,12 @@
 package Stack_DSA;
 
+// Stack Using LinkedList
+
+//Concept:
+//Each node holds data and a reference to the next node.
+//
+//top refers to the top node in the stack.
+
 
 class Node {
     int data;
@@ -80,5 +87,16 @@ Peek: 200
 Popped: 300
 Peek: 200
 200 100
+
+ */
+
+/*
+
+| Feature      | Array-based Stack      | LinkedList-based Stack     |
+| ------------ | ---------------------- | -------------------------- |
+| Size Limit   | Fixed (unless dynamic) | Dynamic (no limit)         |
+| Memory Usage | Compact                | Slightly more (node links) |
+| Performance  | Fast                   | Slight overhead            |
+
 
  */
