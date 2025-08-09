@@ -26,7 +26,7 @@ public class BinarySearchRecursive {
 }
 
 /*
-mid=2 (5) → key>5 → search right  
+mid=2 (5) → key>5 → search right
 mid=4 (9) → key<9 → search left
 mid=3 (7) → found
 
