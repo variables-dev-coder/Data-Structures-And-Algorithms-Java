@@ -28,7 +28,7 @@ Peek
 
 isEmpty
     front == null
-    
+
  */
 
 class Node {
