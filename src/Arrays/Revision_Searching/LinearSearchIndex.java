@@ -11,7 +11,7 @@ public class LinearSearchIndex {
     }
 
     public static void main(String[] args) {
-        int[] arr = {12, 34, 56, 78, 70, 23};
+        int[] arr = {12, 34, 56, 78, 70, 23, 34};
         int key = 34;
 
         int index = linearSearch(arr, key);
@@ -23,3 +23,11 @@ public class LinearSearchIndex {
         }
     }
 }
+
+/*
+Logic Explanation:
+Traverse array from left to right.
+Compare each element with key.
+If match found → return index immediately (first occurrence).
+If loop ends without match → return -1.
+ */
