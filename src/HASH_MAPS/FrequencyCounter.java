@@ -38,3 +38,26 @@ public class FrequencyCounter {
 }
 
 // {1=2, 2=3, 3=1, 4=1}
+/*
+Dry Run
+
+Array = [1, 2, 2, 3, 1, 4, 2]
+
+Start: {}
+
+Process 1 → {1=1}
+
+Process 2 → {1=1, 2=1}
+
+Process 2 → {1=1, 2=2}
+
+Process 3 → {1=1, 2=2, 3=1}
+
+Process 1 → {1=2, 2=2, 3=1}
+
+Process 4 → {1=2, 2=2, 3=1, 4=1}
+
+Process 2 → {1=2, 2=3, 3=1, 4=1}
+
+Final Output → {1=2, 2=3, 3=1, 4=1}
+ */
