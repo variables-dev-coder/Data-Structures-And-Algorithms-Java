@@ -14,6 +14,6 @@ public class LinearSearchExample2 {
         String name = "Munna";
         char target = 'u';
 
-        System.out.println(searchChar(name, target));  // true 
+        System.out.println(searchChar(name, target));  // true
     }
 }
