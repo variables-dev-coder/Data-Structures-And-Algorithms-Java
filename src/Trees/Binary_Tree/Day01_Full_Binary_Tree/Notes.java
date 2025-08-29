@@ -124,6 +124,49 @@ For this tree:
 C has one child →  Not full.
 
 
+Example 1 – Small Full Binary Tree
+       A
+      / \
+     B   C
+
+Here:
+    Root = A
+    A has 2 children (B and C).
+    B and C have 0 children.
+        This is a Full Binary Tree.
+
+Example 2 – Bigger Full Binary Tree
+
+        A
+       / \
+      B   C
+     / \   \
+    D   E   F   ❌
+
+A → 2 children (ok)
+B → 2 children (ok)
+C → only 1 child ❌ (not allowed)
+❌ This is NOT a Full Binary Tree.
+
+Example 3 – Correct Full Binary Tree with more nodes
+
+          A
+         / \
+        B   C
+       / \ / \
+      D  E F  G
+
+Every node has either:
+    0 children (D, E, F, G)
+    2 children (A, B, C)
+        ✅ This is a Full Binary Tree.
+
+✅ Key Reminder
+
+Full Binary Tree Rule:
+Every node → either 0 children (leaf) OR 2 children (internal).
+No node can have just 1 child.
+
 
          */
     }
