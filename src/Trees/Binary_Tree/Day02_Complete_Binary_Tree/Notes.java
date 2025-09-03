@@ -157,7 +157,6 @@ Example
 
 ---
 
-Munna, do you want me to also create a **side-by-side diagram image (Full vs Complete)** so you can directly post it or use it as a notes picture?
 
 
          */
