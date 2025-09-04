@@ -116,6 +116,60 @@ Steps:
 
 
 
+Formula Proofs for Perfect Binary Tree
+
+1. Total Nodes = 2^h - 1
+    Where h = height of the tree (levels count).
+
+Proof:
+    Level 1 (root) → 2^0 = 1 node.
+    Level 2 → 2^1 = 2 nodes.
+    Level 3 → 2^2 = 4 nodes.
+    Level 4 → 2^3 = 8 nodes.
+    …
+    Level h → 2^(h-1) nodes.
+
+    So, total nodes = 1 + 2 + 4 + 8 + … + 2^(h-1)
+
+This is a Geometric Progression (GP).
+Formula:
+Sum = (2^h - 1)
+Hence, Total Nodes = 2^h - 1.
+
+
+
+2. Number of Leaf Nodes = 2^(h-1)
+Proof:
+    In a Perfect Binary Tree, all leaves exist only at the last level.
+    Last level = Level h.
+    Number of nodes at level h = 2^(h-1).
+    So, Leaf Nodes = 2^(h-1).
+
+
+3. Number of Internal Nodes = Leaf Nodes - 1
+Proof:
+Total nodes = Internal + Leaf.
+From above:
+Total = (2^h - 1)
+Leaf  = 2^(h-1)
+So, Internal = Total - Leaf
+= (2^h - 1) - 2^(h-1)
+= 2^(h-1) - 1
+Hence, Internal Nodes = 2^(h-1) - 1.
+
+Example with h = 3
+        1
+      /   \
+     2     3
+    / \   / \
+   4  5  6   7
+
+Height = 3.
+Total nodes = 2^3 - 1 = 7
+Leaf nodes = 2^(3-1) = 4
+Internal nodes = 4 - 1 = 3
+
+
 
          */
 
