@@ -77,6 +77,6 @@ public class ArrayQueue2 {
         System.out.println(q.isFull());  // false
 
         System.out.println(q.peek());   // 30
-        
+
     }
 }
