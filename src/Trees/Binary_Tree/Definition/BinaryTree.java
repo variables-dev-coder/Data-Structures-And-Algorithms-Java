@@ -140,5 +140,5 @@ Bonus High-Level
         Formula: 2^(h+1) - 1
         (if root is at height 0).
 
-        
+
  */
