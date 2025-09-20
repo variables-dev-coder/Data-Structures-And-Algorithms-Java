@@ -34,11 +34,11 @@ public class FullBinaryTreeCheck {
            / \
           4   5
         */
-        Node root = new Node(1);
-        root.left = new Node(2);
-        root.right = new Node(3);
-        root.left.left = new Node(4);
-        root.left.right = new Node(5);
+        Node2 root = new Node2(1);
+        root.left = new Node2(2);
+        root.right = new Node2(3);
+        root.left.left = new Node2(4);
+        root.left.right = new Node2(5);
 
         System.out.println("Is Full Binary Tree? " + isFull(root)); // true
     }
