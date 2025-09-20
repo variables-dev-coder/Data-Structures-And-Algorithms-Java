@@ -1,5 +1,8 @@
 package Trees.Binary_Tree.Types;
 
+//Check if a Binary Tree is Full
+//Condition: Each node must have either 0 or 2 children.
+
 class Node2 {
     int val;
     Node2 left, right;
@@ -12,7 +15,7 @@ class Node2 {
 
 public class FullBinaryTreeCheck {
     // Function to check Full Binary Tree
-    static boolean isFull(Node root) {
+    static boolean isFull(Node2 root) {
         if (root == null) return true;
 
         // Leaf node → valid
