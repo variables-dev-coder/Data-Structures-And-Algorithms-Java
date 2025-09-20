@@ -1,5 +1,10 @@
 package Trees.Binary_Tree.Types;
 
+//Check if a Binary Tree is Degenerate (Skewed)
+//Condition:
+//Every parent node has only one child.
+//It behaves like a Linked List.
+//Worst-case height = n
 
 class Node6 {
     int val;
