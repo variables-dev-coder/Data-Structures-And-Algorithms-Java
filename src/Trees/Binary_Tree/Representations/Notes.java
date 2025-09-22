@@ -138,6 +138,85 @@ Comparison: Linked vs Array Representation
 
 
 
+Interview Questions
+===================
+Q1. What are the two common ways to represent a Binary Tree?
+
+A:
+    1.Linked Node Representation – Each node contains data, a pointer/reference to the left child,
+        and a pointer to the right child.
+
+    2.Array Representation – Tree nodes are stored in an array using heap-style indexing.
+
+
+Q2. What is the formula to find parent, left child, and right child in Array Representation?
+
+A:
+    Parent of node at index i → i / 2
+    Left child of node at index i → 2 * i
+    Right child of node at index i → 2 * i + 1
+
+
+Q3. When would you prefer Linked Node Representation over Array Representation?
+
+A:
+    When the tree is dynamic (frequent insertions & deletions).
+    When the tree is sparse (many missing nodes).
+    Linked representation saves space because it does not waste indices for null children.
+
+
+Q4. When is Array Representation more efficient than Linked Nodes?
+
+A:
+    When the tree is complete or nearly complete (like a heap).
+    Array representation provides O(1) access to parent/child nodes using index formulas.
+    Good for heaps, segment trees, and binary indexed trees.
+
+
+Q5. What are the disadvantages of Array Representation?
+
+A:
+    Wastes space if the tree is sparse (lots of nulls).
+    Resizing may be required if tree grows larger than allocated array.
+    Insertion/deletion operations are more difficult than in linked representation.
+
+
+Q6. Which representation is used for implementing a Heap? Why?
+
+A:
+    Array representation is used because heaps are always complete binary trees, so no indices are wasted.
+    Parent-child relationships can be found using simple formulas without extra memory overhead.
+
+
+Q7. In Linked Representation, what is the memory overhead of each node?
+
+A:
+Each node stores:
+    Data
+    Reference to left child
+    Reference to right child
+So overhead = two pointers per node (besides data).
+
+
+Q8. Can we represent a Binary Tree in LinkedList form (like BFS order)?
+
+A:
+    Yes, we can use a LinkedList to store nodes level-by-level (like Level-order traversal).
+    But this is not a true representation—it’s just a storage format.
+
+
+Q9. Which is better for binary search trees (BST) – Linked or Array Representation?
+
+A:
+    Linked representation is better because BST insertions and deletions are frequent.
+    Array would waste space for unbalanced BSTs (degenerate case = linked list).
+
+
+Q10. Can Array Representation handle an infinite tree?
+
+A:
+    No, because arrays require predefined size or resizing.
+    Linked representation can handle unbounded growth (limited by memory).
 
 
          */
