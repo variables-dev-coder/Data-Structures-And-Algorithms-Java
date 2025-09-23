@@ -1,5 +1,6 @@
 package Trees.Binary_Tree.Binary_Tree_Traversals;
 
+//Postorder Traversal (DFS) – Left → Right → Root
 
 class Node3 {
     int val;
@@ -30,5 +31,5 @@ public class PostorderTraversal {
         postorder(root); // Output: 4 5 2 3 1
     }
 }
-
-//Postorder: 4 5 2 3 1 
+//Used for deleting a tree, postfix evaluation.
+//Postorder: 4 5 2 3 1
