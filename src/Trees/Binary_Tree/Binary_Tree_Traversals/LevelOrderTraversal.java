@@ -40,4 +40,4 @@ public class LevelOrderTraversal {
 }
 
 // Level-order: 1 2 3 4 5
-// Useful for printing tree level by level, BFS problems.
+// Useful for printing tree level by level, BFS  problems.
