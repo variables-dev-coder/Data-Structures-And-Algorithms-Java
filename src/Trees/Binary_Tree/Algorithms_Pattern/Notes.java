@@ -168,7 +168,7 @@ Recursive (DFS)
   A: Use DFS, base case null → 0, return 1 + max(leftHeight, rightHeight).
 
 2.Q: Why is recursion a natural fit for tree problems?
-  A: Trees are recursive structures (node → left subtree, right subtree).
+  A: Trees are recursive structures (node → left subtree, right subtree). 
      Each subtree is itself a smaller tree, so recursion models it perfectly.
 
 Iterative (Stack/Queue)
@@ -186,7 +186,7 @@ Divide & Conquer
 ----------------
 
 5.Q: How do you check if a binary tree is height-balanced?
-  A: Use divide & conquer: get height of left & right → if abs diff > 1 return false.
+  A: Use divide & conquer: get height of left & right → if abs diff > 1 return false. 
      Optimize by returning -1 early if imbalance found.
 
 6.Q: Why is divide & conquer better than naive recursive solutions in trees?
@@ -210,10 +210,9 @@ Mixed / Advanced
     Interview scenarios where interviewer wants explicit stack/queue handling.
 
 10.Q: Explain Morris traversal. Why is it special?
-   A: Morris traversal is an inorder traversal using O(1) space. It modifies tree links
+   A: Morris traversal is an inorder traversal using O(1) space. It modifies tree links 
    temporarily (using threaded connections), unlike recursion/stack that require O(H) memory.
-
-
+   
    
          */
     }
