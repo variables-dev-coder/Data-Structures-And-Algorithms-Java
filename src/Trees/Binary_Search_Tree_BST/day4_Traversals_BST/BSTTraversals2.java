@@ -86,4 +86,4 @@ public class BSTTraversals2 {
 //Inorder: 20 30 40 50 60 70 80
 //Preorder: 50 30 20 40 70 60 80
 //Postorder: 20 40 30 60 80 70 50
-//Level Order: 50 30 70 20 40 60 80 
+//Level Order: 50 30 70 20 40 60 80
