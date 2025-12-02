@@ -43,4 +43,4 @@ public class RemoveNthFromEnd {
 }
 
 //Before: 1 2 3 4 5
-//After:  1 2 3 5 
+//After:  1 2 3 5
