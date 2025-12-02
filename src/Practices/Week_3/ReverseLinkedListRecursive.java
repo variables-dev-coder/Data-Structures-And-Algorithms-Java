@@ -41,4 +41,4 @@ public class ReverseLinkedListRecursive {
 }
 
 // Original: 1 2 3
-// Reversed: 3 2 1 
+// Reversed: 3 2 1
