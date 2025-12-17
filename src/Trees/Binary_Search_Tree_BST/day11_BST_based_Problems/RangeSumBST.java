@@ -26,7 +26,7 @@ public class RangeSumBST {
     }
 
     public static void main(String[] args) {
-        
+
         Node1 root = new Node1(50);
         root.left = new Node1(30);
         root.right = new Node1(70);
