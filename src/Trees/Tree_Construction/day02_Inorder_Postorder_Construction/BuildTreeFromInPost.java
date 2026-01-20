@@ -59,4 +59,4 @@ public class BuildTreeFromInPost {
     }
 }
 
-// Inorder of constructed tree: 9 3 15 20 7 
+// Inorder of constructed tree: 9 3 15 20 7
