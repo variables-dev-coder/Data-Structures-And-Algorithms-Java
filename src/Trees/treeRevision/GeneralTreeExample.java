@@ -2,11 +2,11 @@ package Trees.treeRevision;
 
 import java.util.*;
 
-class Node {
+class Node2 {
     int val;
-    List<Node> children;
+    List<Node2> children;
 
-    Node(int val) {
+    Node2(int val) {
         this.val = val;
         children = new ArrayList<>();
     }
@@ -15,29 +15,29 @@ class Node {
 public class GeneralTreeExample {
 
     // DFS (Preorder)
-    static void dfs(Node root) {
+    static void dfs(Node2 root) {
 
         if (root == null) return;
 
         System.out.print(root.val + " ");
 
-        for (Node child : root.children) {
+        for (Node2 child : root.children) {
             dfs(child);
         }
     }
 
     // BFS (Level Order)
-    static void bfs(Node root) {
+    static void bfs(Node2 root) {
 
-        Queue<Node> q = new LinkedList<>();
+        Queue<Node2> q = new LinkedList<>();
         q.add(root);
 
         while (!q.isEmpty()) {
 
-            Node curr = q.poll();
+            Node2 curr = q.poll();
             System.out.print(curr.val + " ");
 
-            for (Node child : curr.children) {
+            for (Node2 child : curr.children) {
                 q.add(child);
             }
         }
@@ -45,13 +45,13 @@ public class GeneralTreeExample {
 
     public static void main(String[] args) {
 
-        Node root = new Node(1);
+        Node2 root = new Node2(1);
 
-        Node n2 = new Node(2);
-        Node n3 = new Node(3);
-        Node n4 = new Node(4);
-        Node n5 = new Node(5);
-        Node n6 = new Node(6);
+        Node2 n2 = new Node2(2);
+        Node2 n3 = new Node2(3);
+        Node2 n4 = new Node2(4);
+        Node2 n5 = new Node2(5);
+        Node2 n6 = new Node2(6);
 
         // Build tree
         root.children.add(n2);
