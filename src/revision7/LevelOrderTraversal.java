@@ -2,27 +2,27 @@ package revision7;
 
 import java.util.*;
 
-class Node {
+class Node9 {
     int data;
-    Node left, right;
+    Node10 left, right;
 
-    Node(int data) {
+    Node9(int data) {
         this.data = data;
     }
 }
 
 public class LevelOrderTraversal {
 
-    static void levelOrder(Node root) {
+    static void levelOrder(Node10 root) {
 
         if (root == null) return;
 
-        Queue<Node> q = new LinkedList<>();
+        Queue<Node10> q = new LinkedList<>();
         q.offer(root);
 
         while (!q.isEmpty()) {
 
-            Node curr = q.poll();
+            Node10 curr = q.poll();
 
             System.out.print(curr.data + " ");
 
@@ -36,13 +36,13 @@ public class LevelOrderTraversal {
 
     public static void main(String[] args) {
 
-        Node root = new Node(1);
+        Node10 root = new Node10(1);
 
-        root.left = new Node(2);
-        root.right = new Node(3);
+        root.left = new Node10(2);
+        root.right = new Node10(3);
 
-        root.left.left = new Node(4);
-        root.left.right = new Node(5);
+        root.left.left = new Node10(4);
+        root.left.right = new Node10(5);
 
         levelOrder(root);
     }
