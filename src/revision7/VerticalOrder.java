@@ -2,59 +2,67 @@ package revision7;
 
 import java.util.*;
 
-class Node {
+class Node14 {
     int data;
     Node14 left, right;
 
-    Node(int data) {
+    Node14(int data) {
         this.data = data;
     }
 }
 
-class Pair {
+class Pair3 {
     Node14 node;
     int hd;
 
-    Pair(Node14 node, int hd) {
+    Pair3(Node14 node, int hd) {
         this.node = node;
         this.hd = hd;
     }
 }
 
-public class TopViewTree {
+public class VerticalOrder {
 
-    static void topView(Node14 root) {
+    static void verticalOrder(Node14 root) {
 
-        TreeMap<Integer, Integer> map =
+        TreeMap<Integer,
+                ArrayList<Integer>> map =
                 new TreeMap<>();
 
-        Queue<Pair> queue =
+        Queue<Pair3> queue =
                 new LinkedList<>();
 
-        queue.offer(new Pair(root, 0));
+        queue.offer(new Pair3(root, 0));
 
         while (!queue.isEmpty()) {
 
-            Pair p = queue.poll();
+            Pair3 p = queue.poll();
 
             map.putIfAbsent(
                     p.hd,
-                    p.node.data);
+                    new ArrayList<>());
+
+            map.get(p.hd)
+                    .add(p.node.data);
 
             if (p.node.left != null)
                 queue.offer(
-                        new Pair(
+                        new Pair3(
                                 p.node.left,
                                 p.hd - 1));
 
             if (p.node.right != null)
                 queue.offer(
-                        new Pair(
+                        new Pair3(
                                 p.node.right,
                                 p.hd + 1));
         }
 
-        System.out.println(map.values());
+        for (ArrayList<Integer> list :
+                map.values()) {
+
+            System.out.println(list);
+        }
     }
 
     public static void main(String[] args) {
@@ -67,6 +75,6 @@ public class TopViewTree {
         root.left.left = new Node14(4);
         root.left.right = new Node14(5);
 
-        topView(root);
+        verticalOrder(root);
     }
 }
