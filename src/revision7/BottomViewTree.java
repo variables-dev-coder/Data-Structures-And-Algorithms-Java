@@ -2,54 +2,54 @@ package revision7;
 
 import java.util.*;
 
-class Node {
+class Node13 {
     int data;
-    Node left, right;
+    Node13 left, right;
 
-    Node(int data) {
+    Node13(int data) {
         this.data = data;
     }
 }
 
-class Pair {
-    Node node;
+class Pair2 {
+    Node13 node;
     int hd;
 
-    Pair(Node node, int hd) {
+    Pair2(Node13 node, int hd) {
         this.node = node;
         this.hd = hd;
     }
 }
 
-public class TopViewTree {
+public class BottomViewTree {
 
-    static void topView(Node root) {
+    static void bottomView(Node13 root) {
 
         TreeMap<Integer, Integer> map =
                 new TreeMap<>();
 
-        Queue<Pair> queue =
+        Queue<Pair2> queue =
                 new LinkedList<>();
 
-        queue.offer(new Pair(root, 0));
+        queue.offer(new Pair2(root, 0));
 
         while (!queue.isEmpty()) {
 
-            Pair p = queue.poll();
+            Pair2 p = queue.poll();
 
-            map.putIfAbsent(
+            map.put(
                     p.hd,
                     p.node.data);
 
             if (p.node.left != null)
                 queue.offer(
-                        new Pair(
+                        new Pair2(
                                 p.node.left,
                                 p.hd - 1));
 
             if (p.node.right != null)
                 queue.offer(
-                        new Pair(
+                        new Pair2(
                                 p.node.right,
                                 p.hd + 1));
         }
@@ -59,14 +59,14 @@ public class TopViewTree {
 
     public static void main(String[] args) {
 
-        Node root = new Node(1);
+        Node13 root = new Node13(1);
 
-        root.left = new Node(2);
-        root.right = new Node(3);
+        root.left = new Node13(2);
+        root.right = new Node13(3);
 
-        root.left.left = new Node(4);
-        root.left.right = new Node(5);
+        root.left.left = new Node13(4);
+        root.left.right = new Node13(5);
 
-        topView(root);
+        bottomView(root);
     }
 }
