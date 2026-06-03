@@ -4,7 +4,7 @@ import java.util.*;
 
 class Node14 {
     int data;
-    Node14 left, right;
+    Node50 left, right;
 
     Node14(int data) {
         this.data = data;
@@ -12,10 +12,10 @@ class Node14 {
 }
 
 class Pair3 {
-    Node14 node;
+    Node50 node;
     int hd;
 
-    Pair3(Node14 node, int hd) {
+    Pair3(Node50 node, int hd) {
         this.node = node;
         this.hd = hd;
     }
@@ -23,7 +23,7 @@ class Pair3 {
 
 public class VerticalOrder {
 
-    static void verticalOrder(Node14 root) {
+    static void verticalOrder(Node50 root) {
 
         TreeMap<Integer,
                 ArrayList<Integer>> map =
@@ -67,13 +67,13 @@ public class VerticalOrder {
 
     public static void main(String[] args) {
 
-        Node14 root = new Node14(1);
+        Node50 root = new Node50(1);
 
-        root.left = new Node14(2);
-        root.right = new Node14(3);
+        root.left = new Node50(2);
+        root.right = new Node50(3);
 
-        root.left.left = new Node14(4);
-        root.left.right = new Node14(5);
+        root.left.left = new Node50(4);
+        root.left.right = new Node50(5);
 
         verticalOrder(root);
     }

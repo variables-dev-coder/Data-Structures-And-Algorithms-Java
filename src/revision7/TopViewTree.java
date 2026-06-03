@@ -2,20 +2,20 @@ package revision7;
 
 import java.util.*;
 
-class Node {
+class Node50 {
     int data;
-    Node14 left, right;
+    Node50 left, right;
 
-    Node(int data) {
+    Node50(int data) {
         this.data = data;
     }
 }
 
 class Pair {
-    Node14 node;
+    Node50 node;
     int hd;
 
-    Pair(Node14 node, int hd) {
+    Pair(Node50 node, int hd) {
         this.node = node;
         this.hd = hd;
     }
@@ -23,7 +23,7 @@ class Pair {
 
 public class TopViewTree {
 
-    static void topView(Node14 root) {
+    static void topView(Node50 root) {
 
         TreeMap<Integer, Integer> map =
                 new TreeMap<>();
@@ -59,13 +59,13 @@ public class TopViewTree {
 
     public static void main(String[] args) {
 
-        Node14 root = new Node14(1);
+        Node50 root = new Node50(1);
 
-        root.left = new Node14(2);
-        root.right = new Node14(3);
+        root.left = new Node50(2);
+        root.right = new Node50(3);
 
-        root.left.left = new Node14(4);
-        root.left.right = new Node14(5);
+        root.left.left = new Node50(4);
+        root.left.right = new Node50(5);
 
         topView(root);
     }
