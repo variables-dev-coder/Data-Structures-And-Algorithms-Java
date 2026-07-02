@@ -6,8 +6,8 @@ import java.util.Queue;
 class TreeNode5 {
 
     int data;
-    TreeNode5 left;
-    TreeNode5 right;
+    TreeNode6 left;
+    TreeNode6 right;
 
     TreeNode5(int data) {
         this.data = data;
@@ -16,18 +16,18 @@ class TreeNode5 {
 
 public class LevelOrderTraversal {
 
-    static void levelOrder(TreeNode5 root) {
+    static void levelOrder(TreeNode6 root) {
 
         if(root == null)
             return;
 
-        Queue<TreeNode5> queue = new LinkedList<>();
+        Queue<TreeNode6> queue = new LinkedList<>();
 
         queue.offer(root);
 
         while(!queue.isEmpty()) {
 
-            TreeNode5 current = queue.poll();
+            TreeNode6 current = queue.poll();
 
             System.out.print(current.data + " ");
 
@@ -41,16 +41,16 @@ public class LevelOrderTraversal {
 
     public static void main(String[] args) {
 
-        TreeNode5 root = new TreeNode5(10);
+        TreeNode6 root = new TreeNode6(10);
 
-        root.left = new TreeNode5(5);
-        root.right = new TreeNode5(20);
+        root.left = new TreeNode6(5);
+        root.right = new TreeNode6(20);
 
-        root.left.left = new TreeNode5(2);
-        root.left.right = new TreeNode5(8);
+        root.left.left = new TreeNode6(2);
+        root.left.right = new TreeNode6(8);
 
-        root.right.left = new TreeNode5(15);
-        root.right.right = new TreeNode5(25);
+        root.right.left = new TreeNode6(15);
+        root.right.right = new TreeNode6(25);
 
         levelOrder(root);
     }
